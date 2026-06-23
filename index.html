@@ -1,5 +1,899 @@
-<!DOCTYPE html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
-<title>SAT Day4</title></head><body>
-<h1>SAT 高频1000词｜Day 4 正式版（29词）</h1>
-<p>Day4 网站包已创建。此版本包含 88-116 共29词的发音按钮、英文释义、中文释义、SAT例句、中文翻译和连读按钮框架。</p>
-</body></html>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SAT 高频1000词 Day 4 正式版</title>
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,"Microsoft YaHei",sans-serif;
+  background:#f4f6f8;
+  color:#111;
+  line-height:1.65;
+}
+header{
+  position:sticky;
+  top:0;
+  background:white;
+  padding:16px;
+  box-shadow:0 2px 12px rgba(0,0,0,.08);
+  z-index:10;
+}
+header h1{font-size:22px;margin:0 0 6px}
+header p{margin:0;color:#666;font-size:15px}
+.container{max-width:920px;margin:0 auto;padding:14px}
+.card{
+  background:#fff;
+  border-radius:20px;
+  padding:24px;
+  margin:18px 0;
+  box-shadow:0 4px 16px rgba(0,0,0,.08);
+}
+.topline{display:flex;align-items:center;justify-content:space-between;gap:10px}
+h2{font-size:34px;margin:0 0 16px}
+.sound{
+  width:100%;
+  display:block;
+  font-size:28px;
+  font-weight:650;
+  padding:14px 12px;
+  margin:6px 0 20px;
+  background:#fff;
+  border:2px solid #e2e2e2;
+  border-radius:14px;
+  cursor:pointer;
+  text-align:left;
+}
+.sound:active,.smallbtn:active{transform:scale(.99)}
+.word{border-bottom:1px dotted #888}
+.hint{font-weight:520;color:#333}
+.sentence{font-size:24px;line-height:1.45}
+p{font-size:24px;margin:16px 0}
+.info{border-left:5px solid #ddd;padding-left:14px}
+.sub{margin-top:28px}
+.smallbtn{
+  border:0;
+  border-radius:999px;
+  padding:9px 14px;
+  font-size:16px;
+  background:#111;
+  color:white;
+  cursor:pointer;
+  white-space:nowrap;
+}
+.footer{text-align:center;color:#666;padding:28px 10px 40px}
+@media(max-width:600px){
+  .container{padding:10px}
+  .card{padding:20px 16px;border-radius:18px}
+  h2{font-size:30px}
+  .sound{font-size:24px;padding:13px 10px}
+  .sentence{font-size:21px}
+  p{font-size:21px}
+  header h1{font-size:20px}
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>SAT 高频1000词｜Day 4 正式版（29词）</h1>
+  <p>点 🔊 听单词和例句；点“连读”连续播放单词 + SAT例句。</p>
+</header>
+
+<main class="container">
+
+<article class="card">
+  <div class="topline">
+    <h2>88. antediluvian</h2>
+    <button class="smallbtn" onclick='playBoth("antediluvian", "The antediluvian machine was finally replaced by modern equipment.")'>▶ 连读</button>
+  </div>
+
+  <button class="sound" onclick='speak("antediluvian", 0.78)'>
+    <span class="icon">🔊</span>
+    <span class="word">antediluvian</span>
+    <span class="hint">(an-tee-duh-LOO-vee-un)</span>
+  </button>
+
+  <div class="info">
+    <p><b>中文：</b>陈旧过时的；大洪水前的</p>
+    <p><b>英文：</b>extremely old or outdated</p>
+  </div>
+
+  <p class="sub"><b>例句发音：</b></p>
+  <button class="sound sentence" onclick='speak("The antediluvian machine was finally replaced by modern equipment.", 0.82)'>
+    <span class="icon">🔊</span>
+    <span>The antediluvian machine was finally replaced by modern equipment.</span>
+  </button>
+
+  <p><b>例句：</b><br>The antediluvian machine was finally replaced by modern equipment.</p>
+  <p><b>中文翻译：</b><br>那台陈旧过时的机器终于被现代设备取代了。</p>
+</article>
+
+<article class="card">
+  <div class="topline">
+    <h2>89. anthology</h2>
+    <button class="smallbtn" onclick='playBoth("anthology", "The students read an anthology of short stories for English class.")'>▶ 连读</button>
+  </div>
+
+  <button class="sound" onclick='speak("anthology", 0.78)'>
+    <span class="icon">🔊</span>
+    <span class="word">anthology</span>
+    <span class="hint">(an-THOL-uh-jee)</span>
+  </button>
+
+  <div class="info">
+    <p><b>中文：</b>选集；文集</p>
+    <p><b>英文：</b>a collected selection of works</p>
+  </div>
+
+  <p class="sub"><b>例句发音：</b></p>
+  <button class="sound sentence" onclick='speak("The students read an anthology of short stories for English class.", 0.82)'>
+    <span class="icon">🔊</span>
+    <span>The students read an anthology of short stories for English class.</span>
+  </button>
+
+  <p><b>例句：</b><br>The students read an anthology of short stories for English class.</p>
+  <p><b>中文翻译：</b><br>学生们在英语课上阅读了一本文短篇小说选集。</p>
+</article>
+
+<article class="card">
+  <div class="topline">
+    <h2>90. anthropocentric</h2>
+    <button class="smallbtn" onclick='playBoth("anthropocentric", "The essay criticizes an anthropocentric view of the environment.")'>▶ 连读</button>
+  </div>
+
+  <button class="sound" onclick='speak("anthropocentric", 0.78)'>
+    <span class="icon">🔊</span>
+    <span class="word">anthropocentric</span>
+    <span class="hint">(an-thruh-poh-SEN-trik)</span>
+  </button>
+
+  <div class="info">
+    <p><b>中文：</b>以人类为中心的</p>
+    <p><b>英文：</b>regarding humans as central</p>
+  </div>
+
+  <p class="sub"><b>例句发音：</b></p>
+  <button class="sound sentence" onclick='speak("The essay criticizes an anthropocentric view of the environment.", 0.82)'>
+    <span class="icon">🔊</span>
+    <span>The essay criticizes an anthropocentric view of the environment.</span>
+  </button>
+
+  <p><b>例句：</b><br>The essay criticizes an anthropocentric view of the environment.</p>
+  <p><b>中文翻译：</b><br>这篇文章批评了一种以人类为中心的环境观。</p>
+</article>
+
+<article class="card">
+  <div class="topline">
+    <h2>91. antipathy</h2>
+    <button class="smallbtn" onclick='playBoth("antipathy", "She felt a strong antipathy toward dishonesty and unfairness.")'>▶ 连读</button>
+  </div>
+
+  <button class="sound" onclick='speak("antipathy", 0.78)'>
+    <span class="icon">🔊</span>
+    <span class="word">antipathy</span>
+    <span class="hint">(an-TIP-uh-thee)</span>
+  </button>
+
+  <div class="info">
+    <p><b>中文：</b>反感；厌恶</p>
+    <p><b>英文：</b>a strong dislike</p>
+  </div>
+
+  <p class="sub"><b>例句发音：</b></p>
+  <button class="sound sentence" onclick='speak("She felt a strong antipathy toward dishonesty and unfairness.", 0.82)'>
+    <span class="icon">🔊</span>
+    <span>She felt a strong antipathy toward dishonesty and unfairness.</span>
+  </button>
+
+  <p><b>例句：</b><br>She felt a strong antipathy toward dishonesty and unfairness.</p>
+  <p><b>中文翻译：</b><br>她对不诚实和不公平有强烈反感。</p>
+</article>
+
+<article class="card">
+  <div class="topline">
+    <h2>92. antiquated</h2>
+    <button class="smallbtn" onclick='playBoth("antiquated", "The school replaced its antiquated computers with newer models.")'>▶ 连读</button>
+  </div>
+
+  <button class="sound" onclick='speak("antiquated", 0.78)'>
+    <span class="icon">🔊</span>
+    <span class="word">antiquated</span>
+    <span class="hint">(AN-ti-kway-tid)</span>
+  </button>
+
+  <div class="info">
+    <p><b>中文：</b>陈旧的；过时的</p>
+    <p><b>英文：</b>old-fashioned and outdated</p>
+  </div>
+
+  <p class="sub"><b>例句发音：</b></p>
+  <button class="sound sentence" onclick='speak("The school replaced its antiquated computers with newer models.", 0.82)'>
+    <span class="icon">🔊</span>
+    <span>The school replaced its antiquated computers with newer models.</span>
+  </button>
+
+  <p><b>例句：</b><br>The school replaced its antiquated computers with newer models.</p>
+  <p><b>中文翻译：</b><br>学校用新型号电脑替换了陈旧的电脑。</p>
+</article>
+
+<article class="card">
+  <div class="topline">
+    <h2>93. antithesis</h2>
+    <button class="smallbtn" onclick='playBoth("antithesis", "His calm response was the antithesis of her angry reaction.")'>▶ 连读</button>
+  </div>
+
+  <button class="sound" onclick='speak("antithesis", 0.78)'>
+    <span class="icon">🔊</span>
+    <span class="word">antithesis</span>
+    <span class="hint">(an-TITH-uh-sis)</span>
+  </button>
+
+  <div class="info">
+    <p><b>中文：</b>对立面；正相反</p>
+    <p><b>英文：</b>the direct opposite</p>
+  </div>
+
+  <p class="sub"><b>例句发音：</b></p>
+  <button class="sound sentence" onclick='speak("His calm response was the antithesis of her angry reaction.", 0.82)'>
+    <span class="icon">🔊</span>
+    <span>His calm response was the antithesis of her angry reaction.</span>
+  </button>
+
+  <p><b>例句：</b><br>His calm response was the antithesis of her angry reaction.</p>
+  <p><b>中文翻译：</b><br>他的冷静回应与她愤怒的反应正好相反。</p>
+</article>
+
+<article class="card">
+  <div class="topline">
+    <h2>94. anxiety</h2>
+    <button class="smallbtn" onclick='playBoth("anxiety", "Careful preparation can reduce anxiety before an important exam.")'>▶ 连读</button>
+  </div>
+
+  <button class="sound" onclick='speak("anxiety", 0.78)'>
+    <span class="icon">🔊</span>
+    <span class="word">anxiety</span>
+    <span class="hint">(ang-ZY-uh-tee)</span>
+  </button>
+
+  <div class="info">
+    <p><b>中文：</b>焦虑</p>
+    <p><b>英文：</b>worry or nervousness</p>
+  </div>
+
+  <p class="sub"><b>例句发音：</b></p>
+  <button class="sound sentence" onclick='speak("Careful preparation can reduce anxiety before an important exam.", 0.82)'>
+    <span class="icon">🔊</span>
+    <span>Careful preparation can reduce anxiety before an important exam.</span>
+  </button>
+
+  <p><b>例句：</b><br>Careful preparation can reduce anxiety before an important exam.</p>
+  <p><b>中文翻译：</b><br>充分准备可以减轻重要考试前的焦虑。</p>
+</article>
+
+<article class="card">
+  <div class="topline">
+    <h2>95. apathetic</h2>
+    <button class="smallbtn" onclick='playBoth("apathetic", "The speaker struggled to engage the apathetic audience.")'>▶ 连读</button>
+  </div>
+
+  <button class="sound" onclick='speak("apathetic", 0.78)'>
+    <span class="icon">🔊</span>
+    <span class="word">apathetic</span>
+    <span class="hint">(ap-uh-THET-ik)</span>
+  </button>
+
+  <div class="info">
+    <p><b>中文：</b>冷漠的；无兴趣的</p>
+    <p><b>英文：</b>showing little interest or emotion</p>
+  </div>
+
+  <p class="sub"><b>例句发音：</b></p>
+  <button class="sound sentence" onclick='speak("The speaker struggled to engage the apathetic audience.", 0.82)'>
+    <span class="icon">🔊</span>
+    <span>The speaker struggled to engage the apathetic audience.</span>
+  </button>
+
+  <p><b>例句：</b><br>The speaker struggled to engage the apathetic audience.</p>
+  <p><b>中文翻译：</b><br>演讲者努力吸引那些冷漠的听众。</p>
+</article>
+
+<article class="card">
+  <div class="topline">
+    <h2>96. aperture</h2>
+    <button class="smallbtn" onclick='playBoth("aperture", "A wider aperture allows more light to enter the camera.")'>▶ 连读</button>
+  </div>
+
+  <button class="sound" onclick='speak("aperture", 0.78)'>
+    <span class="icon">🔊</span>
+    <span class="word">aperture</span>
+    <span class="hint">(AP-er-cher)</span>
+  </button>
+
+  <div class="info">
+    <p><b>中文：</b>孔；缝隙；光圈</p>
+    <p><b>英文：</b>an opening or gap</p>
+  </div>
+
+  <p class="sub"><b>例句发音：</b></p>
+  <button class="sound sentence" onclick='speak("A wider aperture allows more light to enter the camera.", 0.82)'>
+    <span class="icon">🔊</span>
+    <span>A wider aperture allows more light to enter the camera.</span>
+  </button>
+
+  <p><b>例句：</b><br>A wider aperture allows more light to enter the camera.</p>
+  <p><b>中文翻译：</b><br>更大的光圈可以让更多光线进入相机。</p>
+</article>
+
+<article class="card">
+  <div class="topline">
+    <h2>97. apex</h2>
+    <button class="smallbtn" onclick='playBoth("apex", "Winning the championship was the apex of his athletic career.")'>▶ 连读</button>
+  </div>
+
+  <button class="sound" onclick='speak("apex", 0.78)'>
+    <span class="icon">🔊</span>
+    <span class="word">apex</span>
+    <span class="hint">(AY-peks)</span>
+  </button>
+
+  <div class="info">
+    <p><b>中文：</b>顶点；最高点</p>
+    <p><b>英文：</b>the highest point</p>
+  </div>
+
+  <p class="sub"><b>例句发音：</b></p>
+  <button class="sound sentence" onclick='speak("Winning the championship was the apex of his athletic career.", 0.82)'>
+    <span class="icon">🔊</span>
+    <span>Winning the championship was the apex of his athletic career.</span>
+  </button>
+
+  <p><b>例句：</b><br>Winning the championship was the apex of his athletic career.</p>
+  <p><b>中文翻译：</b><br>赢得冠军是他运动生涯的巅峰。</p>
+</article>
+
+<article class="card">
+  <div class="topline">
+    <h2>98. aphorism</h2>
+    <button class="smallbtn" onclick='playBoth("aphorism", "The teacher began the lesson with an aphorism about patience.")'>▶ 连读</button>
+  </div>
+
+  <button class="sound" onclick='speak("aphorism", 0.78)'>
+    <span class="icon">🔊</span>
+    <span class="word">aphorism</span>
+    <span class="hint">(AF-uh-riz-um)</span>
+  </button>
+
+  <div class="info">
+    <p><b>中文：</b>格言；警句</p>
+    <p><b>英文：</b>a short wise saying</p>
+  </div>
+
+  <p class="sub"><b>例句发音：</b></p>
+  <button class="sound sentence" onclick='speak("The teacher began the lesson with an aphorism about patience.", 0.82)'>
+    <span class="icon">🔊</span>
+    <span>The teacher began the lesson with an aphorism about patience.</span>
+  </button>
+
+  <p><b>例句：</b><br>The teacher began the lesson with an aphorism about patience.</p>
+  <p><b>中文翻译：</b><br>老师用一句关于耐心的格言开始了课程。</p>
+</article>
+
+<article class="card">
+  <div class="topline">
+    <h2>99. aplomb</h2>
+    <button class="smallbtn" onclick='playBoth("aplomb", "She handled the difficult interview with remarkable aplomb.")'>▶ 连读</button>
+  </div>
+
+  <button class="sound" onclick='speak("aplomb", 0.78)'>
+    <span class="icon">🔊</span>
+    <span class="word">aplomb</span>
+    <span class="hint">(uh-PLOM)</span>
+  </button>
+
+  <div class="info">
+    <p><b>中文：</b>沉着；镇定</p>
+    <p><b>英文：</b>confidence and composure</p>
+  </div>
+
+  <p class="sub"><b>例句发音：</b></p>
+  <button class="sound sentence" onclick='speak("She handled the difficult interview with remarkable aplomb.", 0.82)'>
+    <span class="icon">🔊</span>
+    <span>She handled the difficult interview with remarkable aplomb.</span>
+  </button>
+
+  <p><b>例句：</b><br>She handled the difficult interview with remarkable aplomb.</p>
+  <p><b>中文翻译：</b><br>她以出色的沉着应对了这场困难的面试。</p>
+</article>
+
+<article class="card">
+  <div class="topline">
+    <h2>100. apocalyptic</h2>
+    <button class="smallbtn" onclick='playBoth("apocalyptic", "The novel imagines an apocalyptic world after a global disaster.")'>▶ 连读</button>
+  </div>
+
+  <button class="sound" onclick='speak("apocalyptic", 0.78)'>
+    <span class="icon">🔊</span>
+    <span class="word">apocalyptic</span>
+    <span class="hint">(uh-pok-uh-LIP-tik)</span>
+  </button>
+
+  <div class="info">
+    <p><b>中文：</b>世界末日般的；灾难性的</p>
+    <p><b>英文：</b>disastrous or end-of-world like</p>
+  </div>
+
+  <p class="sub"><b>例句发音：</b></p>
+  <button class="sound sentence" onclick='speak("The novel imagines an apocalyptic world after a global disaster.", 0.82)'>
+    <span class="icon">🔊</span>
+    <span>The novel imagines an apocalyptic world after a global disaster.</span>
+  </button>
+
+  <p><b>例句：</b><br>The novel imagines an apocalyptic world after a global disaster.</p>
+  <p><b>中文翻译：</b><br>这部小说想象了一场全球灾难后的末日世界。</p>
+</article>
+
+<article class="card">
+  <div class="topline">
+    <h2>101. apocryphal</h2>
+    <button class="smallbtn" onclick='playBoth("apocryphal", "The famous story may be apocryphal, but it still teaches a lesson.")'>▶ 连读</button>
+  </div>
+
+  <button class="sound" onclick='speak("apocryphal", 0.78)'>
+    <span class="icon">🔊</span>
+    <span class="word">apocryphal</span>
+    <span class="hint">(uh-POK-ruh-ful)</span>
+  </button>
+
+  <div class="info">
+    <p><b>中文：</b>真伪存疑的；虚构的</p>
+    <p><b>英文：</b>of doubtful truth</p>
+  </div>
+
+  <p class="sub"><b>例句发音：</b></p>
+  <button class="sound sentence" onclick='speak("The famous story may be apocryphal, but it still teaches a lesson.", 0.82)'>
+    <span class="icon">🔊</span>
+    <span>The famous story may be apocryphal, but it still teaches a lesson.</span>
+  </button>
+
+  <p><b>例句：</b><br>The famous story may be apocryphal, but it still teaches a lesson.</p>
+  <p><b>中文翻译：</b><br>这个著名故事可能真伪存疑，但仍然有教育意义。</p>
+</article>
+
+<article class="card">
+  <div class="topline">
+    <h2>102. apostate</h2>
+    <button class="smallbtn" onclick='playBoth("apostate", "He was called an apostate after publicly rejecting the group\u2019s beliefs.")'>▶ 连读</button>
+  </div>
+
+  <button class="sound" onclick='speak("apostate", 0.78)'>
+    <span class="icon">🔊</span>
+    <span class="word">apostate</span>
+    <span class="hint">(uh-POS-tayt)</span>
+  </button>
+
+  <div class="info">
+    <p><b>中文：</b>变节者；脱党者</p>
+    <p><b>英文：</b>one who abandons a belief</p>
+  </div>
+
+  <p class="sub"><b>例句发音：</b></p>
+  <button class="sound sentence" onclick='speak("He was called an apostate after publicly rejecting the group\u2019s beliefs.", 0.82)'>
+    <span class="icon">🔊</span>
+    <span>He was called an apostate after publicly rejecting the group’s beliefs.</span>
+  </button>
+
+  <p><b>例句：</b><br>He was called an apostate after publicly rejecting the group’s beliefs.</p>
+  <p><b>中文翻译：</b><br>他公开拒绝该团体的信念后，被称为变节者。</p>
+</article>
+
+<article class="card">
+  <div class="topline">
+    <h2>103. appease</h2>
+    <button class="smallbtn" onclick='playBoth("appease", "The principal tried to appease the worried parents after the incident.")'>▶ 连读</button>
+  </div>
+
+  <button class="sound" onclick='speak("appease", 0.78)'>
+    <span class="icon">🔊</span>
+    <span class="word">appease</span>
+    <span class="hint">(uh-PEEZ)</span>
+  </button>
+
+  <div class="info">
+    <p><b>中文：</b>平息；安抚</p>
+    <p><b>英文：</b>to calm or satisfy</p>
+  </div>
+
+  <p class="sub"><b>例句发音：</b></p>
+  <button class="sound sentence" onclick='speak("The principal tried to appease the worried parents after the incident.", 0.82)'>
+    <span class="icon">🔊</span>
+    <span>The principal tried to appease the worried parents after the incident.</span>
+  </button>
+
+  <p><b>例句：</b><br>The principal tried to appease the worried parents after the incident.</p>
+  <p><b>中文翻译：</b><br>事件发生后，校长试图安抚担忧的家长。</p>
+</article>
+
+<article class="card">
+  <div class="topline">
+    <h2>104. appellation</h2>
+    <button class="smallbtn" onclick='playBoth("appellation", "The city earned the appellation of a cultural capital.")'>▶ 连读</button>
+  </div>
+
+  <button class="sound" onclick='speak("appellation", 0.78)'>
+    <span class="icon">🔊</span>
+    <span class="word">appellation</span>
+    <span class="hint">(ap-uh-LAY-shun)</span>
+  </button>
+
+  <div class="info">
+    <p><b>中文：</b>名称；称呼</p>
+    <p><b>英文：</b>a name or title</p>
+  </div>
+
+  <p class="sub"><b>例句发音：</b></p>
+  <button class="sound sentence" onclick='speak("The city earned the appellation of a cultural capital.", 0.82)'>
+    <span class="icon">🔊</span>
+    <span>The city earned the appellation of a cultural capital.</span>
+  </button>
+
+  <p><b>例句：</b><br>The city earned the appellation of a cultural capital.</p>
+  <p><b>中文翻译：</b><br>这座城市获得了文化之都的称号。</p>
+</article>
+
+<article class="card">
+  <div class="topline">
+    <h2>105. apposite</h2>
+    <button class="smallbtn" onclick='playBoth("apposite", "Her apposite example made the abstract idea easier to understand.")'>▶ 连读</button>
+  </div>
+
+  <button class="sound" onclick='speak("apposite", 0.78)'>
+    <span class="icon">🔊</span>
+    <span class="word">apposite</span>
+    <span class="hint">(AP-uh-zit)</span>
+  </button>
+
+  <div class="info">
+    <p><b>中文：</b>贴切的；适当的</p>
+    <p><b>英文：</b>highly appropriate</p>
+  </div>
+
+  <p class="sub"><b>例句发音：</b></p>
+  <button class="sound sentence" onclick='speak("Her apposite example made the abstract idea easier to understand.", 0.82)'>
+    <span class="icon">🔊</span>
+    <span>Her apposite example made the abstract idea easier to understand.</span>
+  </button>
+
+  <p><b>例句：</b><br>Her apposite example made the abstract idea easier to understand.</p>
+  <p><b>中文翻译：</b><br>她贴切的例子使这个抽象概念更容易理解。</p>
+</article>
+
+<article class="card">
+  <div class="topline">
+    <h2>106. appraise</h2>
+    <button class="smallbtn" onclick='playBoth("appraise", "Experts were asked to appraise the value of the painting.")'>▶ 连读</button>
+  </div>
+
+  <button class="sound" onclick='speak("appraise", 0.78)'>
+    <span class="icon">🔊</span>
+    <span class="word">appraise</span>
+    <span class="hint">(uh-PRAYZ)</span>
+  </button>
+
+  <div class="info">
+    <p><b>中文：</b>评价；估价</p>
+    <p><b>英文：</b>to assess value or quality</p>
+  </div>
+
+  <p class="sub"><b>例句发音：</b></p>
+  <button class="sound sentence" onclick='speak("Experts were asked to appraise the value of the painting.", 0.82)'>
+    <span class="icon">🔊</span>
+    <span>Experts were asked to appraise the value of the painting.</span>
+  </button>
+
+  <p><b>例句：</b><br>Experts were asked to appraise the value of the painting.</p>
+  <p><b>中文翻译：</b><br>专家受邀评估这幅画的价值。</p>
+</article>
+
+<article class="card">
+  <div class="topline">
+    <h2>107. apprehension</h2>
+    <button class="smallbtn" onclick='playBoth("apprehension", "He felt apprehension before giving his first public speech.")'>▶ 连读</button>
+  </div>
+
+  <button class="sound" onclick='speak("apprehension", 0.78)'>
+    <span class="icon">🔊</span>
+    <span class="word">apprehension</span>
+    <span class="hint">(ap-ri-HEN-shun)</span>
+  </button>
+
+  <div class="info">
+    <p><b>中文：</b>担忧；理解；逮捕</p>
+    <p><b>英文：</b>anxiety or fear about something</p>
+  </div>
+
+  <p class="sub"><b>例句发音：</b></p>
+  <button class="sound sentence" onclick='speak("He felt apprehension before giving his first public speech.", 0.82)'>
+    <span class="icon">🔊</span>
+    <span>He felt apprehension before giving his first public speech.</span>
+  </button>
+
+  <p><b>例句：</b><br>He felt apprehension before giving his first public speech.</p>
+  <p><b>中文翻译：</b><br>第一次公开演讲前，他感到担忧。</p>
+</article>
+
+<article class="card">
+  <div class="topline">
+    <h2>108. appropriate</h2>
+    <button class="smallbtn" onclick='playBoth("appropriate", "The teacher chose an appropriate article for the reading assignment.")'>▶ 连读</button>
+  </div>
+
+  <button class="sound" onclick='speak("appropriate", 0.78)'>
+    <span class="icon">🔊</span>
+    <span class="word">appropriate</span>
+    <span class="hint">(uh-PROH-pree-it)</span>
+  </button>
+
+  <div class="info">
+    <p><b>中文：</b>合适的；拨用</p>
+    <p><b>英文：</b>suitable; to take or assign</p>
+  </div>
+
+  <p class="sub"><b>例句发音：</b></p>
+  <button class="sound sentence" onclick='speak("The teacher chose an appropriate article for the reading assignment.", 0.82)'>
+    <span class="icon">🔊</span>
+    <span>The teacher chose an appropriate article for the reading assignment.</span>
+  </button>
+
+  <p><b>例句：</b><br>The teacher chose an appropriate article for the reading assignment.</p>
+  <p><b>中文翻译：</b><br>老师为阅读作业选择了一篇合适的文章。</p>
+</article>
+
+<article class="card">
+  <div class="topline">
+    <h2>109. approximate</h2>
+    <button class="smallbtn" onclick='playBoth("approximate", "The approximate distance between the two cities is fifty miles.")'>▶ 连读</button>
+  </div>
+
+  <button class="sound" onclick='speak("approximate", 0.78)'>
+    <span class="icon">🔊</span>
+    <span class="word">approximate</span>
+    <span class="hint">(uh-PROK-suh-mit)</span>
+  </button>
+
+  <div class="info">
+    <p><b>中文：</b>大约的；接近</p>
+    <p><b>英文：</b>close to but not exact</p>
+  </div>
+
+  <p class="sub"><b>例句发音：</b></p>
+  <button class="sound sentence" onclick='speak("The approximate distance between the two cities is fifty miles.", 0.82)'>
+    <span class="icon">🔊</span>
+    <span>The approximate distance between the two cities is fifty miles.</span>
+  </button>
+
+  <p><b>例句：</b><br>The approximate distance between the two cities is fifty miles.</p>
+  <p><b>中文翻译：</b><br>这两座城市之间的大约距离是五十英里。</p>
+</article>
+
+<article class="card">
+  <div class="topline">
+    <h2>110. apt</h2>
+    <button class="smallbtn" onclick='playBoth("apt", "Her comment was an apt summary of the whole discussion.")'>▶ 连读</button>
+  </div>
+
+  <button class="sound" onclick='speak("apt", 0.78)'>
+    <span class="icon">🔊</span>
+    <span class="word">apt</span>
+    <span class="hint">(apt)</span>
+  </button>
+
+  <div class="info">
+    <p><b>中文：</b>恰当的；有……倾向的</p>
+    <p><b>英文：</b>suitable or likely</p>
+  </div>
+
+  <p class="sub"><b>例句发音：</b></p>
+  <button class="sound sentence" onclick='speak("Her comment was an apt summary of the whole discussion.", 0.82)'>
+    <span class="icon">🔊</span>
+    <span>Her comment was an apt summary of the whole discussion.</span>
+  </button>
+
+  <p><b>例句：</b><br>Her comment was an apt summary of the whole discussion.</p>
+  <p><b>中文翻译：</b><br>她的评论恰当地概括了整个讨论。</p>
+</article>
+
+<article class="card">
+  <div class="topline">
+    <h2>111. arable</h2>
+    <button class="smallbtn" onclick='playBoth("arable", "The valley contains arable land that supports several villages.")'>▶ 连读</button>
+  </div>
+
+  <button class="sound" onclick='speak("arable", 0.78)'>
+    <span class="icon">🔊</span>
+    <span class="word">arable</span>
+    <span class="hint">(AR-uh-bul)</span>
+  </button>
+
+  <div class="info">
+    <p><b>中文：</b>适于耕种的</p>
+    <p><b>英文：</b>fit for farming</p>
+  </div>
+
+  <p class="sub"><b>例句发音：</b></p>
+  <button class="sound sentence" onclick='speak("The valley contains arable land that supports several villages.", 0.82)'>
+    <span class="icon">🔊</span>
+    <span>The valley contains arable land that supports several villages.</span>
+  </button>
+
+  <p><b>例句：</b><br>The valley contains arable land that supports several villages.</p>
+  <p><b>中文翻译：</b><br>这个山谷有适于耕种的土地，供养着几个村庄。</p>
+</article>
+
+<article class="card">
+  <div class="topline">
+    <h2>112. arbiter</h2>
+    <button class="smallbtn" onclick='playBoth("arbiter", "The committee acted as the final arbiter in the dispute.")'>▶ 连读</button>
+  </div>
+
+  <button class="sound" onclick='speak("arbiter", 0.78)'>
+    <span class="icon">🔊</span>
+    <span class="word">arbiter</span>
+    <span class="hint">(AR-bi-ter)</span>
+  </button>
+
+  <div class="info">
+    <p><b>中文：</b>仲裁者；权威裁决者</p>
+    <p><b>英文：</b>a judge or final authority</p>
+  </div>
+
+  <p class="sub"><b>例句发音：</b></p>
+  <button class="sound sentence" onclick='speak("The committee acted as the final arbiter in the dispute.", 0.82)'>
+    <span class="icon">🔊</span>
+    <span>The committee acted as the final arbiter in the dispute.</span>
+  </button>
+
+  <p><b>例句：</b><br>The committee acted as the final arbiter in the dispute.</p>
+  <p><b>中文翻译：</b><br>委员会在这场争议中充当最终仲裁者。</p>
+</article>
+
+<article class="card">
+  <div class="topline">
+    <h2>113. arbitrary</h2>
+    <button class="smallbtn" onclick='playBoth("arbitrary", "The students complained that the new rule seemed arbitrary.")'>▶ 连读</button>
+  </div>
+
+  <button class="sound" onclick='speak("arbitrary", 0.78)'>
+    <span class="icon">🔊</span>
+    <span class="word">arbitrary</span>
+    <span class="hint">(AR-bi-trer-ee)</span>
+  </button>
+
+  <div class="info">
+    <p><b>中文：</b>武断的；随意的</p>
+    <p><b>英文：</b>based on random choice</p>
+  </div>
+
+  <p class="sub"><b>例句发音：</b></p>
+  <button class="sound sentence" onclick='speak("The students complained that the new rule seemed arbitrary.", 0.82)'>
+    <span class="icon">🔊</span>
+    <span>The students complained that the new rule seemed arbitrary.</span>
+  </button>
+
+  <p><b>例句：</b><br>The students complained that the new rule seemed arbitrary.</p>
+  <p><b>中文翻译：</b><br>学生们抱怨这条新规定显得很武断。</p>
+</article>
+
+<article class="card">
+  <div class="topline">
+    <h2>114. arcane</h2>
+    <button class="smallbtn" onclick='playBoth("arcane", "The professor used arcane terms that confused the beginners.")'>▶ 连读</button>
+  </div>
+
+  <button class="sound" onclick='speak("arcane", 0.78)'>
+    <span class="icon">🔊</span>
+    <span class="word">arcane</span>
+    <span class="hint">(ar-KAYN)</span>
+  </button>
+
+  <div class="info">
+    <p><b>中文：</b>晦涩难懂的；神秘的</p>
+    <p><b>英文：</b>known by only a few</p>
+  </div>
+
+  <p class="sub"><b>例句发音：</b></p>
+  <button class="sound sentence" onclick='speak("The professor used arcane terms that confused the beginners.", 0.82)'>
+    <span class="icon">🔊</span>
+    <span>The professor used arcane terms that confused the beginners.</span>
+  </button>
+
+  <p><b>例句：</b><br>The professor used arcane terms that confused the beginners.</p>
+  <p><b>中文翻译：</b><br>教授使用了让初学者困惑的晦涩术语。</p>
+</article>
+
+<article class="card">
+  <div class="topline">
+    <h2>115. archetype</h2>
+    <button class="smallbtn" onclick='playBoth("archetype", "The character is an archetype of the brave young hero.")'>▶ 连读</button>
+  </div>
+
+  <button class="sound" onclick='speak("archetype", 0.78)'>
+    <span class="icon">🔊</span>
+    <span class="word">archetype</span>
+    <span class="hint">(AR-ki-type)</span>
+  </button>
+
+  <div class="info">
+    <p><b>中文：</b>原型；典型</p>
+    <p><b>英文：</b>an original model or pattern</p>
+  </div>
+
+  <p class="sub"><b>例句发音：</b></p>
+  <button class="sound sentence" onclick='speak("The character is an archetype of the brave young hero.", 0.82)'>
+    <span class="icon">🔊</span>
+    <span>The character is an archetype of the brave young hero.</span>
+  </button>
+
+  <p><b>例句：</b><br>The character is an archetype of the brave young hero.</p>
+  <p><b>中文翻译：</b><br>这个人物是勇敢少年英雄的典型。</p>
+</article>
+
+<article class="card">
+  <div class="topline">
+    <h2>116. arduous</h2>
+    <button class="smallbtn" onclick='playBoth("arduous", "Preparing for the exam was an arduous but rewarding process.")'>▶ 连读</button>
+  </div>
+
+  <button class="sound" onclick='speak("arduous", 0.78)'>
+    <span class="icon">🔊</span>
+    <span class="word">arduous</span>
+    <span class="hint">(AR-joo-us)</span>
+  </button>
+
+  <div class="info">
+    <p><b>中文：</b>艰巨的；费力的</p>
+    <p><b>英文：</b>difficult and requiring effort</p>
+  </div>
+
+  <p class="sub"><b>例句发音：</b></p>
+  <button class="sound sentence" onclick='speak("Preparing for the exam was an arduous but rewarding process.", 0.82)'>
+    <span class="icon">🔊</span>
+    <span>Preparing for the exam was an arduous but rewarding process.</span>
+  </button>
+
+  <p><b>例句：</b><br>Preparing for the exam was an arduous but rewarding process.</p>
+  <p><b>中文翻译：</b><br>备考是一个艰巨但有收获的过程。</p>
+</article>
+
+<div class="footer">End of Day 4 · Words 88–116</div>
+</main>
+
+<script>
+let selectedVoice=null;
+function loadVoice(){
+ const voices=window.speechSynthesis.getVoices();
+ selectedVoice=voices.find(v=>v.lang==='en-US'&&/Samantha|Ava|Allison|Susan|Jenny|Aria|Google US English|Microsoft/i.test(v.name))||voices.find(v=>v.lang==='en-US')||voices.find(v=>v.lang&&v.lang.startsWith('en'))||null;
+}
+if('speechSynthesis' in window){loadVoice();window.speechSynthesis.onvoiceschanged=loadVoice;}
+function speak(text,rate=0.82){
+ if(!('speechSynthesis' in window)){alert('这个浏览器不支持语音朗读。请用 Safari、Chrome 或 Edge 打开。');return;}
+ window.speechSynthesis.cancel();loadVoice();
+ const u=new SpeechSynthesisUtterance(text);
+ u.lang='en-US';u.rate=rate;u.pitch=1;u.volume=1;
+ if(selectedVoice)u.voice=selectedVoice;
+ window.speechSynthesis.speak(u);
+}
+function playBoth(word,sentence){
+ if(!('speechSynthesis' in window)){alert('这个浏览器不支持语音朗读。请用 Safari、Chrome 或 Edge 打开。');return;}
+ window.speechSynthesis.cancel();loadVoice();
+ const u1=new SpeechSynthesisUtterance(word);
+ u1.lang='en-US';u1.rate=.76;if(selectedVoice)u1.voice=selectedVoice;
+ const u2=new SpeechSynthesisUtterance(sentence);
+ u2.lang='en-US';u2.rate=.82;if(selectedVoice)u2.voice=selectedVoice;
+ u1.onend=()=>setTimeout(()=>window.speechSynthesis.speak(u2),350);
+ window.speechSynthesis.speak(u1);
+}
+</script>
+</body>
+</html>
